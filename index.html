@@ -3,8 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Hello Angular</title>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="app.js"></script>
   </head>
-  <body>
+  <body ng-app="MyTestApp">
     <h1>Hello Angular I am Starting the course!Mithun</h1>
+    <div ng-controller="FirstController">
+      {{name}}
+
+      <button type="button" ng-click="changeMe();">Feed Me</button>
+      <img ng-src="mithun_{{test}}.jpg">
+    </div>
   </body>
 </html>
